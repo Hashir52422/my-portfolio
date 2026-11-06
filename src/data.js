@@ -1,5 +1,17 @@
 export const projects = [
   {
+    title: "Pricing Hub",
+    tag: "Retail Promotional Pricing Platform",
+    category: "fullstack",
+    year: "2025–2026",
+    desc: "Promotional pricing platform for The Children's Place — multi-pivot pricing on AG Grid, a hierarchy cascade from Division to Style-Color, and an automated MPP hand-off pipeline.",
+    detail: "Migrated the Next.js application from JavaScript to strict TypeScript and moved the data layer to Prisma with PostgreSQL, with modular, typed API routes. Built the MPP hand-off pipeline, turning published promotions into a CSV upload file and an Excel cancel list, with date ranges, dollar-off promotions and leading-zero-safe IDs. Engineered multi-pivot pricing and the hierarchy cascade (Division → Style-Color) on AG Grid, including pivot override rules, offer extension and Hardmark uploads for future product moves. Integrated Promo Intel suggested promotions with retail price guards and role-based publishing, and wrote Playwright end-to-end tests and the in-app user manual.",
+    stack: ["Next.js", "TypeScript", "AG Grid", "Prisma", "PostgreSQL", "Playwright"],
+      link: null,
+    linkLabel: "Not a public project",
+    color: "#8d9eff"
+  },
+  {
     title: "Daftarpro",
     tag: "Office Operations Suite",
     category: "fullstack",
@@ -19,7 +31,7 @@ export const projects = [
     desc: "High-performance government data dashboard for the Abu Dhabi Housing Authority — complex visualizations over large datasets with near-instant retrieval.",
     detail: "Architected a high-performance data dashboard for complex visualizations using Recharts (Donut and Line charts). Streamlined data pipeline performance by integrating Databricks with IndexedDB, enabling near-instantaneous frontend data retrieval for large datasets.",
     stack: ["React", "Recharts", "Databricks", "IndexedDB", "Node.js"],
-    link: null,
+      link: null,
     linkLabel: "Not a public project",
     color: "#f2a65a"
   },
@@ -79,7 +91,7 @@ export const projects = [
     desc: "Centralized ERP for club operations — Membership, Restaurant, Sports and Rooms modules, role-based dashboards, JWT-secured ASP.NET Identity.",
     detail: "Led development of a multi-module ERP replacing a legacy system for a large country club. Built four interdependent modules — Membership, Restaurant POS, Sports booking, and Rooms — all sharing a single role-based access layer with ASP.NET Identity and JWT.",
     stack: ["React", "ASP.NET Core", "SQL Server", "JWT", "Entity Framework"],
-  link: null,
+    link: null,
     linkLabel: "Not a public project",
     color: "#e8e6df"
   }
@@ -88,7 +100,8 @@ export const projects = [
 export const skillsFrontend = [
   "React.js & Next.js",
   "TypeScript",
-  "Redux & state architecture",
+  "AG Grid & data-heavy UIs",
+  "Redux, Zustand & TanStack Query",
   "Tailwind CSS",
   "Responsive, accessible UI"
 ];
@@ -96,8 +109,10 @@ export const skillsFrontend = [
 export const skillsBackend = [
   "Node.js & Express",
   "MongoDB & Mongoose",
+  "PostgreSQL & Prisma",
   "RESTful API design",
   "Redis caching",
+  "Playwright end-to-end testing",
   "Docker & CI/CD",
   "Git & GitHub workflows"
 ];
